@@ -11,4 +11,8 @@ public class Challenge3 {
             System.out.println(testString);
         }
     };
+
+    public static String getTestString() {
+        return testString;
+    }
 }

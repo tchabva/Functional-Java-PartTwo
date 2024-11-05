@@ -39,4 +39,30 @@ class FunctionalJavaTesting {
         assertEquals(4, Challenge2.emailListSupplier.get().size());
 
     }
+
+    @Test
+    @DisplayName("Prints the string with an exclamation mark if the input string has a length greater than 5")
+    void testIsStringLengthGreaterThanFive(){
+        // Arrange
+        List<String> list = List.of("a@", "testing@test", "test@test", "test");
+
+        // Act
+        Challenge3.isStringLengthGreaterThanFive.accept(list.get(0));
+        String resultOne = Challenge3.getTestString();
+        assertEquals("", resultOne);
+
+        Challenge3.isStringLengthGreaterThanFive.accept(list.get(1));
+        String resultTwo = Challenge3.getTestString();
+        assertEquals("testing@test!", resultTwo);
+
+        Challenge3.isStringLengthGreaterThanFive.accept(list.get(2));
+        String resultThree = Challenge3.getTestString();
+        assertEquals("test@test!", resultThree);
+
+        Challenge3.isStringLengthGreaterThanFive.accept(list.get(3));
+        String resultFour = Challenge3.getTestString();
+        assertEquals("", resultFour);
+    }
+
+
 }

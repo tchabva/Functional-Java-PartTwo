@@ -18,7 +18,7 @@ Apply this to the following list of email addresses:
 
     public static Consumer<String> returnsUsernameFromEmail = email -> {
         username = email.replaceAll("@.+","");
-        System.out.println(email.replaceAll("@.+",""));
+        System.out.println(username);
     };
 
     public static String getUsername() {

@@ -32,4 +32,11 @@ class FunctionalJavaTesting {
         int resultFour = Challenge1.getIndexOfAt();
         assertEquals(-1, resultFour);
     }
+
+    @Test
+    @DisplayName("Confirms that the Supplier returns a list")
+    void testEmailListSupplier(){
+        assertEquals(4, Challenge2.emailListSupplier.get().size());
+
+    }
 }

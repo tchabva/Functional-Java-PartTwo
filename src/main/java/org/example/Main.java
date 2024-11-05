@@ -22,5 +22,7 @@ public class Main {
 
         Challenge2.emailListSupplier.get().forEach(Challenge4.returnsUsernameFromEmail);
 
+        Challenge5.niceGreeing.accept("Tawanda", 29);
+
     }
 }

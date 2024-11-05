@@ -24,5 +24,7 @@ public class Main {
 
         Challenge5.niceGreeing.accept("Tawanda", 29);
 
+        Challenge6.printEmailsInList.accept(Challenge6.emailSupplierList.get());
+
     }
 }

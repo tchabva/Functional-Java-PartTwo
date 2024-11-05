@@ -20,5 +20,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
+        Challenge2.emailListSupplier.get().forEach(Challenge4.returnsUsernameFromEmail);
+
     }
 }

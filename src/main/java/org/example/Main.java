@@ -12,6 +12,7 @@ public class Main {
 
         list.forEach(Challenge1.indexOfAtSign);
 
+        System.out.println(Challenge2.emailListSupplier.get());
 
     }
 }

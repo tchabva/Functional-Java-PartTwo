@@ -55,5 +55,28 @@ public class Main {
         Challenge8.compareTwoIntegerLists.accept(numList, numListTwo);
         Challenge8.compareTwoIntegerLists.accept(numListThree, numListTwo);
 
+        List<String> emailList = new ArrayList<>();
+        emailList.add("simon.morgan@northcoders.com");
+        emailList.add("chris.ward@northcoders.com");
+        emailList.add("mario@plumbing.it");
+        emailList.add("link@hyrule.co.uk");
+        emailList.add("shrek@duloc.com");
+        emailList.add("ellie@northcoders.js");
+        emailList.add("java@oracle.jvm");
+        emailList.add("ziggy@spidersfrommars.co.uk");
+        emailList.add("lemmy@motorhead.co,uk");
+        emailList.add("me@myhouse.sleep");
+
+        List<String> UKDomainEmail = Challenge9.isValidEmail.apply(emailList, Challenge9.emailEndsWithUKDomain);
+        UKDomainEmail.forEach(System.out::println);
+
+        List<String> ComDomainEmail = Challenge9.isValidEmail.apply(emailList, Challenge9.emailEndsWithComDomain);
+        ComDomainEmail.forEach(System.out::println);
+
+        System.out.println("--------------------------");
+
+        List<String> invalidDomain = Challenge9.isValidEmail.apply(emailList, Challenge9.emailInvalidDomain);
+        invalidDomain.forEach(System.out::println);
+
     }
 }

@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -25,6 +26,15 @@ public class Main {
         Challenge5.niceGreeing.accept("Tawanda", 29);
 
         Challenge6.printEmailsInList.accept(Challenge6.emailSupplierList.get());
+
+        List<Integer> numList = new ArrayList<>();
+        numList.add(5);
+        numList.add(8);
+        numList.add(3);
+        numList.add(6);
+        numList.add(67);
+
+        Challenge7.squareEachNumberInList.andThen(Challenge7.printIntegerList).accept(numList);
 
     }
 }

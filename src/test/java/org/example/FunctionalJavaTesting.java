@@ -64,5 +64,17 @@ class FunctionalJavaTesting {
         assertEquals("", resultFour);
     }
 
+    @Test
+    @DisplayName("Prints username from input email string")
+    void testReturnsUsernameFromEmail(){
+        //Arrange
+        List<String> emailList = Challenge2.emailListSupplier.get();
+
+        //Act and Assert
+        Challenge4.returnsUsernameFromEmail.accept(emailList.get(0));
+        assertEquals("simon.morgan",Challenge4.getUsername());
+
+    }
+
 
 }

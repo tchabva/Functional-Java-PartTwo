@@ -14,10 +14,15 @@ Apply this to the following list of email addresses:
     "hannah.montana@mileycyrus.com"
 */
 
+    private static String username = "";
+
     public static Consumer<String> returnsUsernameFromEmail = email -> {
-        System.out.println(email.replaceAll("@.+",""));
+        username = email.replaceAll("@.+","");
+        System.out.println(username);
     };
 
-
+    public static String getUsername() {
+        return username;
+    }
 
 }

@@ -14,5 +14,11 @@ public class Main {
 
         System.out.println(Challenge2.emailListSupplier.get());
 
+        try {
+            stream.forEach(Challenge3.isStringLengthGreaterThanFive);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }

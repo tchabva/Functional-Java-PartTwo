@@ -36,5 +36,24 @@ public class Main {
 
         Challenge7.squareEachNumberInList.andThen(Challenge7.printIntegerList).accept(numList);
 
+        List<Integer> numListTwo = new ArrayList<>();
+        numList.add(5);
+        numList.add(8);
+        numList.add(3);
+        numList.add(6);
+        numList.add(6);
+
+        List<Integer> numListThree = new ArrayList<>();
+        numList.add(5);
+        numList.add(8);
+        numList.add(3);
+        numList.add(6);
+        numList.add(6);
+
+        System.out.println();
+
+        Challenge8.compareTwoIntegerLists.accept(numList, numListTwo);
+        Challenge8.compareTwoIntegerLists.accept(numListThree, numListTwo);
+
     }
 }
